@@ -1,0 +1,30 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "npx playwright codegen",
+    "paice": "npx playwright test --headed",
+    "debug": "npx playwright test paice-login.spec.ts --debug",
+    "ui-debug": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "chrome": "npm install -D @playwright/test@latest && npx playwright install chromium",
+    "update": "npm install -D @playwright/test@latest && npx playwright install --with-deps",
+    "allure": "allure generate ./allure-results -o ./allure-report --clean && allure open ./allure-report",
+    "dotenv": "npm install dotenv@latest",
+    "envalid": "npm install envalid@latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "envalid": "^8.2.0"
+  }
+}

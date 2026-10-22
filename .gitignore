@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+
+# Playwright generated output
+playwright-report/
+test-results/
+blob-report/
+
+# Authentication state
+.auth/
+
+# Playwright CLI / MCP local state
+.playwright-cli/
+.playwright-mcp/
+.playwright/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/*
